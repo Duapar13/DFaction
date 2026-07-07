@@ -1,0 +1,47 @@
+# ================================
+# DFaction - Configuration
+# ================================
+
+# Type de stockage utilisé par le plugin : "local" ou "mysql"
+# - local : stocke tout (joueurs, factions, claims) dans des fichiers YAML
+#           dans le dossier plugins/DFaction/data/. Aucune config supplémentaire requise.
+# - mysql : stocke tout dans la base MySQL définie ci-dessous.
+storage:
+  type: local
+
+  mysql:
+    host: localhost
+    port: 3306
+    database: dfaction
+    username: root
+    password: ""
+    # Paramètres additionnels ajoutés à l'URL JDBC (ex: useSSL=false&allowPublicKeyRetrieval=true)
+    useSSL: false
+
+faction:
+  # Nombre maximum de caractères autorisés pour le nom d'une faction (/f create <nom>)
+  max-name-length: 10
+
+power:
+  # Power maximum qu'un joueur peut atteindre
+  max: 10.0
+  # Power de départ d'un nouveau joueur
+  starting: 10.0
+  # Quantité de power régénérée automatiquement à chaque intervalle (voir regen-interval-minutes)
+  regen-amount: 1.0
+  # Intervalle en minutes entre deux régénérations de power
+  regen-interval-minutes: 10
+  # Power perdu par un joueur à sa mort
+  loss-per-death: 2.0
+  # Coût en power d'un chunk claim. Une faction ne peut pas claim plus de
+  # chunks que (somme du power de ses membres / claim-cost)
+  claim-cost: 1.0
+
+claims:
+  # Si true, seule la TNT peut détruire des blocs à l'intérieur d'un claim.
+  # Toute autre explosion (creeper, etc.) est bloquée à l'intérieur des claims.
+  only-tnt-breaks-claims: true
+
+  # Distance minimale (en chunks) entre deux factions différentes pour pouvoir
+  # claim (0 = désactivé, un claim peut toucher directement un claim ennemi)
+  min-distance-from-other-faction: 0

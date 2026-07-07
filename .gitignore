@@ -1,0 +1,21 @@
+# Build output
+/target/
+dependency-reduced-pom.xml
+
+# Jars serveur/API Spigot (volumineux, non redistribuables - voir libs/README.md)
+/libs/*.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,12 @@
+name: DFaction
+version: '${project.version}'
+main: com.dfaction.DFaction
+api-version: '26.1'
+author: Tom
+description: Plugin de factions classique (claims par chunk, power, protection).
+
+commands:
+  f:
+    description: Commande principale du plugin de factions.
+    usage: /f <create|claim|unclaim|power|show|invite|join|leave|disband|help> [args]
+    aliases: [faction, factions]
