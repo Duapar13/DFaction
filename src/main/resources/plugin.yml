@@ -4,6 +4,7 @@ main: com.dfaction.DFaction
 api-version: '26.1'
 author: Tom
 description: Plugin de factions classique (claims par chunk, power, protection).
+depend: [DAPI]
 
 commands:
   f:

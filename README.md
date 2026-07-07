@@ -25,6 +25,10 @@ la base classique d'un plugin faction, en open source et pensée pour être
 - **Stockage au choix** : fichiers YAML locaux par défaut, ou base MySQL
   (host/port/base/utilisateur/mot de passe dans `config.yml`) sans rien
   changer au code.
+- **Intégration DAPI** : DFaction publie un service `FactionService` auprès de
+  [DAPI](../DAPI) au démarrage, pour que d'autres plugins `D(nom)` puissent
+  interroger l'état des factions (claims, power, membres...) sans dépendre
+  directement de ce plugin. Voir [`DAPI/README.md`](../DAPI/README.md).
 
 ## Commandes
 
@@ -70,14 +74,21 @@ claims:
 ## Compiler le projet
 
 Le plugin est un projet Maven standard, compilé contre l'API Spigot 26.1.2.
+Il dépend aussi de [DAPI](../DAPI), qu'il faut donc compiler et installer
+**avant** DFaction :
 
 ```
-mvn clean package
+cd ../DAPI && mvn install
+cd ../DFaction && mvn clean package
 ```
 
 Le jar `spigot-api-26.1.2-R0.1-SNAPSHOT.jar` n'est **pas fourni** dans ce dépôt
 (taille + licence Mojang) : voir [`libs/README.md`](libs/README.md) pour la
 procédure (BuildTools + installation dans le dépôt Maven local).
+
+Le serveur doit aussi avoir le jar `DAPI.jar` dans son dossier `plugins/` en
+plus de `DFaction.jar` (DFaction déclare `depend: [DAPI]` et ne se chargera
+pas sans lui).
 
 ## Roadmap / idées d'extension
 

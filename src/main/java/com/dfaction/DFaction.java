@@ -5,8 +5,11 @@ import com.dfaction.listeners.ClaimDisplayListener;
 import com.dfaction.listeners.ExplosionListener;
 import com.dfaction.listeners.PlayerDataListener;
 import com.dfaction.listeners.ProtectionListener;
+import com.dapi.DAPI;
+import com.dapi.service.FactionService;
 import com.dfaction.manager.FactionManager;
 import com.dfaction.manager.PowerManager;
+import com.dfaction.service.DFactionServiceImpl;
 import com.dfaction.storage.FactionStorage;
 import com.dfaction.storage.MySQLFactionStorage;
 import com.dfaction.storage.YamlFactionStorage;
@@ -70,6 +73,9 @@ public class DFaction extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new ExplosionListener(factionManager, this), this);
         getServer().getPluginManager().registerEvents(new ClaimDisplayListener(factionManager, powerManager), this);
         getServer().getPluginManager().registerEvents(new PlayerDataListener(powerManager), this);
+
+        DAPI.registerPlugin(this, "FactionService");
+        DAPI.registerService(FactionService.class, new DFactionServiceImpl(factionManager, powerManager), this);
 
         getLogger().info("DFaction activé (stockage: " + storageType + ").");
     }

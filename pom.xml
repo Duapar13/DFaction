@@ -23,6 +23,17 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- DAPI : registre de services partagé entre les plugins D(nom).
+             Nécessite d'avoir fait "mvn install" sur le projet DAPI au moins
+             une fois localement (voir ../DAPI). Chargé par le serveur au
+             runtime (depend: [DAPI] dans plugin.yml), donc scope provided. -->
+        <dependency>
+            <groupId>com.dapi</groupId>
+            <artifactId>DAPI</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- Driver JDBC MySQL, embarqué (shaded) dans le jar final -->
         <dependency>
             <groupId>com.mysql</groupId>
