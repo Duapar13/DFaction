@@ -1,18 +1,18 @@
-package com.dfaction;
+package com.duapar.dfaction;
 
-import com.dfaction.commands.FCommand;
-import com.dfaction.listeners.ClaimDisplayListener;
-import com.dfaction.listeners.ExplosionListener;
-import com.dfaction.listeners.PlayerDataListener;
-import com.dfaction.listeners.ProtectionListener;
-import com.dapi.DAPI;
-import com.dapi.service.FactionService;
-import com.dfaction.manager.FactionManager;
-import com.dfaction.manager.PowerManager;
-import com.dfaction.service.DFactionServiceImpl;
-import com.dfaction.storage.FactionStorage;
-import com.dfaction.storage.MySQLFactionStorage;
-import com.dfaction.storage.YamlFactionStorage;
+import com.duapar.dfaction.commands.FCommand;
+import com.duapar.dfaction.listeners.ClaimDisplayListener;
+import com.duapar.dfaction.listeners.ExplosionListener;
+import com.duapar.dfaction.listeners.PlayerDataListener;
+import com.duapar.dfaction.listeners.ProtectionListener;
+import com.duapar.dapi.DAPI;
+import com.duapar.dapi.service.FactionService;
+import com.duapar.dfaction.manager.FactionManager;
+import com.duapar.dfaction.manager.PowerManager;
+import com.duapar.dfaction.service.DFactionServiceImpl;
+import com.duapar.dfaction.storage.FactionStorage;
+import com.duapar.dfaction.storage.MySQLFactionStorage;
+import com.duapar.dfaction.storage.YamlFactionStorage;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 

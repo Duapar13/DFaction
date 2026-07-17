@@ -1,6 +1,6 @@
-package com.dfaction.listeners;
+package com.duapar.dfaction.listeners;
 
-import com.dfaction.manager.FactionManager;
+import com.duapar.dfaction.manager.FactionManager;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

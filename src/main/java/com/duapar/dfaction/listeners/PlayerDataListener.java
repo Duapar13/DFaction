@@ -1,7 +1,7 @@
-package com.dfaction.listeners;
+package com.duapar.dfaction.listeners;
 
-import com.dfaction.manager.PowerManager;
-import com.dfaction.model.FPlayer;
+import com.duapar.dfaction.manager.PowerManager;
+import com.duapar.dfaction.model.FPlayer;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;

@@ -1,9 +1,9 @@
-package com.dfaction.storage;
+package com.duapar.dfaction.storage;
 
-import com.dfaction.model.ClaimKey;
-import com.dfaction.model.FPlayer;
-import com.dfaction.model.Faction;
-import com.dfaction.model.Role;
+import com.duapar.dfaction.model.ClaimKey;
+import com.duapar.dfaction.model.FPlayer;
+import com.duapar.dfaction.model.Faction;
+import com.duapar.dfaction.model.Role;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

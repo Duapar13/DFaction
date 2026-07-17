@@ -1,6 +1,6 @@
 name: DFaction
 version: '${project.version}'
-main: com.dfaction.DFaction
+main: com.duapar.dfaction.DFaction
 api-version: '26.1'
 author: Duapar
 description: Plugin de factions classique (claims par chunk, power, protection).

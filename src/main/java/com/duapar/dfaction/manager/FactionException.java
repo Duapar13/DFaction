@@ -1,4 +1,4 @@
-package com.dfaction.manager;
+package com.duapar.dfaction.manager;
 
 /**
  * Erreur "attendue" (mauvais usage, permission, état invalide...) destinée à être

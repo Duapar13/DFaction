@@ -1,7 +1,7 @@
-package com.dfaction.manager;
+package com.duapar.dfaction.manager;
 
-import com.dfaction.model.FPlayer;
-import com.dfaction.storage.FactionStorage;
+import com.duapar.dfaction.model.FPlayer;
+import com.duapar.dfaction.storage.FactionStorage;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;

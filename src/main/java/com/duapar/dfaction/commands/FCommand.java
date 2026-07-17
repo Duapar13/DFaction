@@ -1,12 +1,12 @@
-package com.dfaction.commands;
+package com.duapar.dfaction.commands;
 
-import com.dfaction.manager.FactionException;
-import com.dfaction.manager.FactionManager;
-import com.dfaction.manager.PowerManager;
-import com.dfaction.model.FPlayer;
-import com.dfaction.model.Faction;
-import com.dfaction.model.Role;
-import com.dfaction.util.Msg;
+import com.duapar.dfaction.manager.FactionException;
+import com.duapar.dfaction.manager.FactionManager;
+import com.duapar.dfaction.manager.PowerManager;
+import com.duapar.dfaction.model.FPlayer;
+import com.duapar.dfaction.model.Faction;
+import com.duapar.dfaction.model.Role;
+import com.duapar.dfaction.util.Msg;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

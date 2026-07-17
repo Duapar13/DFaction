@@ -1,4 +1,4 @@
-package com.dfaction.model;
+package com.duapar.dfaction.model;
 
 public enum Role {
     OWNER,

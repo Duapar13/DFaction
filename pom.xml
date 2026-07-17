@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.dfaction</groupId>
+    <groupId>com.duapar.dfaction</groupId>
     <artifactId>DFaction</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
@@ -28,7 +28,7 @@
              une fois localement (voir ../DAPI). Chargé par le serveur au
              runtime (depend: [DAPI] dans plugin.yml), donc scope provided. -->
         <dependency>
-            <groupId>com.dapi</groupId>
+            <groupId>com.duapar.dapi</groupId>
             <artifactId>DAPI</artifactId>
             <version>1.0.0</version>
             <scope>provided</scope>
@@ -74,7 +74,7 @@
                             <relocations>
                                 <relocation>
                                     <pattern>com.mysql</pattern>
-                                    <shadedPattern>com.dfaction.libs.mysql</shadedPattern>
+                                    <shadedPattern>com.duapar.dfaction.libs.mysql</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>

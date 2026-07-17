@@ -1,4 +1,4 @@
-package com.dfaction.util;
+package com.duapar.dfaction.util;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;

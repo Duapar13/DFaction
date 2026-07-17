@@ -1,7 +1,7 @@
-package com.dfaction.storage;
+package com.duapar.dfaction.storage;
 
-import com.dfaction.model.FPlayer;
-import com.dfaction.model.Faction;
+import com.duapar.dfaction.model.FPlayer;
+import com.duapar.dfaction.model.Faction;
 
 import java.util.Map;
 import java.util.UUID;

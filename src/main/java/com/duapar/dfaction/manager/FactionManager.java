@@ -1,10 +1,10 @@
-package com.dfaction.manager;
+package com.duapar.dfaction.manager;
 
-import com.dfaction.model.ClaimKey;
-import com.dfaction.model.FPlayer;
-import com.dfaction.model.Faction;
-import com.dfaction.model.Role;
-import com.dfaction.storage.FactionStorage;
+import com.duapar.dfaction.model.ClaimKey;
+import com.duapar.dfaction.model.FPlayer;
+import com.duapar.dfaction.model.Faction;
+import com.duapar.dfaction.model.Role;
+import com.duapar.dfaction.storage.FactionStorage;
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -187,7 +187,7 @@ public class FactionManager {
 
             Player newOwnerPlayer = Bukkit.getPlayer(nextOwner);
             if (newOwnerPlayer != null) {
-                com.dfaction.util.Msg.send(newOwnerPlayer, "Vous êtes désormais le chef de la faction " + faction.getName() + ".");
+                com.duapar.dfaction.util.Msg.send(newOwnerPlayer, "Vous êtes désormais le chef de la faction " + faction.getName() + ".");
             }
         } else {
             faction.getMembers().remove(player.getUniqueId());

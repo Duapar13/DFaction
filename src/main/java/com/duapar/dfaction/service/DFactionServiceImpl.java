@@ -1,10 +1,10 @@
-package com.dfaction.service;
+package com.duapar.dfaction.service;
 
-import com.dapi.service.FactionService;
-import com.dfaction.manager.FactionManager;
-import com.dfaction.manager.PowerManager;
-import com.dfaction.model.FPlayer;
-import com.dfaction.model.Faction;
+import com.duapar.dapi.service.FactionService;
+import com.duapar.dfaction.manager.FactionManager;
+import com.duapar.dfaction.manager.PowerManager;
+import com.duapar.dfaction.model.FPlayer;
+import com.duapar.dfaction.model.Faction;
 import org.bukkit.Location;
 
 import java.util.UUID;

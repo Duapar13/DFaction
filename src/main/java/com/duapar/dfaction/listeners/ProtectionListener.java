@@ -1,10 +1,10 @@
-package com.dfaction.listeners;
+package com.duapar.dfaction.listeners;
 
-import com.dfaction.manager.FactionManager;
-import com.dfaction.manager.PowerManager;
-import com.dfaction.model.FPlayer;
-import com.dfaction.model.Faction;
-import com.dfaction.util.Msg;
+import com.duapar.dfaction.manager.FactionManager;
+import com.duapar.dfaction.manager.PowerManager;
+import com.duapar.dfaction.model.FPlayer;
+import com.duapar.dfaction.model.Faction;
+import com.duapar.dfaction.util.Msg;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
